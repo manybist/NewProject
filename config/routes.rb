@@ -1,4 +1,11 @@
 Newproject::Application.routes.draw do
+  devise_for :users
+
+  devise_for :installs
+
+  root:to =>"pages#home"
+  get "about" =>"pages#home"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
